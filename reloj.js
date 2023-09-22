@@ -34,8 +34,20 @@
 
         pAnio.textContent = anio;
         
+        //el formato tiene que ser xx:xx:xx
+        if(hora<10){
+            hora = "0"+hora;
+        }
         pHora.textContent = hora;
+
+        if(minuto<10){
+            minuto = "0"+minuto;
+        }
         pMinutos.textContent = minuto;
+
+        if(segundo<10){
+            segundo = "0"+segundo;
+        }
         pSegundos.textContent = segundo;
     }
 
