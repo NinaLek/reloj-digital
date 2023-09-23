@@ -22,15 +22,24 @@
         pHora = document.getElementById('horas'),
         pMinutos = document.getElementById('minutos'),
         pSegundos = document.getElementById('segundos');
-
+        
 
         //ahora hay que mandarselos al index
         //array para el día de la semana
-        var semana = ['Domingo', 'Lunes','Martes','Miércoles','Jueves','Viernes','Sábado'];
-        pDiaSemana.textContent = semana[diaSemana];
-        //array para el mes
-        var meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
-        pMes.textContent = meses[mes];
+        var anchoPantalla= window.innerWidth;//jugando con la pantalla
+        if (anchoPantalla>750){
+            var semana = ['Domingo', 'Lunes','Martes','Miércoles','Jueves','Viernes','Sábado'];
+            pDiaSemana.textContent = semana[diaSemana];
+            //array para el mes
+            var meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+            pMes.textContent = meses[mes];
+        }else{
+            if(mes<10){
+                mes="0"+(mes+1);
+                pMes.textContent = mes;
+            }
+            
+        }
         pNumero.textContent = numero;
         pAnio.textContent = anio;
         
@@ -56,5 +65,5 @@
     var intervalo = setInterval(actualizarHora, 1000);
 
 
-
+    
 }())
