@@ -2,22 +2,25 @@
     margin:0;
     padding:0;
 }
-
+/* A veces creo que entiendo flex y al hacerlo me doy cuenta de que no*/
 body{
+    display: flex;
+    flex-direction: row;
+   justify-content: flex-end;
     word-spacing: 0.4em;
     background: url(./fondo.jpg);
     background-size:cover ;
+    background-repeat: no-repeat;
     font-family: 'Noto Sans','Noto Sans Vithkuqi', sans-serif;
    
     
 }
 
 .contenedor{
-    width: 45%;
-    float: right;
-    margin-right: 25px;
-    margin-top: 25px;
-    border-radius: 10%;
+    padding:2em;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
     text-align: center;
     color: white;
 }
@@ -32,4 +35,30 @@ body{
 .hora p{
     display: inline-block;
     font-size: 4em;
+}
+
+/* -----------responsive------------------*/
+/*---------- menor a 1170---------------*/
+
+@media (max-width: 1170px) {
+    body{
+       display: flexbox;
+       flex-direction: row;
+        width: auto;
+        align-items: center;
+        
+    }
+    .contenedor{
+            background: rgba(8, 8, 8, 0.856);
+            border-radius: 10%;
+            margin:auto;
+
+            
+     }
+
+     /* borro los : y los segundos*/
+     .hora .minutos~p{ 
+        content-visibility: hidden;
+     }
+     
 }

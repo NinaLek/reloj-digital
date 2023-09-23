@@ -31,7 +31,7 @@
         //array para el mes
         var meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
         pMes.textContent = meses[mes];
-
+        pNumero.textContent = numero;
         pAnio.textContent = anio;
         
         //el formato tiene que ser xx:xx:xx
