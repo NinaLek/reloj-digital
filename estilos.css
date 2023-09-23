@@ -39,7 +39,9 @@ body{
     display: inline-block;
     font-size: 4em;
 }
-
+.imagen-graciosa img{
+    width: 500px;
+}
 /* -----------responsive------------------*/
 /*---------- menor a 1170---------------*/
 
