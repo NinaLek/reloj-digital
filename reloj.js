@@ -27,7 +27,7 @@
         //ahora hay que mandarselos al index
         //array para el día de la semana
         var anchoPantalla= window.innerWidth;//jugando con la pantalla
-        if (anchoPantalla>750){
+        if (anchoPantalla>995){
             var semana = ['Domingo', 'Lunes','Martes','Miércoles','Jueves','Viernes','Sábado'];
             pDiaSemana.textContent = semana[diaSemana];
             //array para el mes
