@@ -9,11 +9,16 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Lato:wght@700&family=Noto+Sans+Vithkuqi:wght@500&family=Noto+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
-<body>
-    
+<body class="padre-grid">
+    <header class="header">
+        <h1>Reloj Digital</h1>
+    </header>
+    <main class="main">
+    <div class="imagen-graciosa">
+        <img class="img-chiste" src="./enojado-removebg-preview.png" alt="chiste. persona insultando a una computadora">
+    </div>
     <div class="contenedor">
         <div class="fecha">
-            <!-- <p>Hoy es </p> -->
             <p class="dia" id="dia"></p>
             <p class="numero" id="numero"></p>
             <p class="de">de</p>
@@ -30,12 +35,19 @@
             <p>:</p>
             <p class="segundos" id="segundos"></p>
         </div>
-        <p>El momento perfecto para programar en JavaScript 😉</p>
-        <div class="imagen-graciosa">
-            <img src="./enojado-removebg-preview.png" alt="chiste. persona insultando a una computadora">
-            
-        </div>
+        <p class="frase">El momento perfecto para programar en JavaScript 😉</p>
+        
     </div>
+</main>
+<footer class="footer">
+    <div class="info-footer">
+        <p>¿Sugerencias, comentarios?</p>
+        <p>Información de contacto:</p>
+        <p>Yanina Mylek</p>
+        <p>mylekyanina@gmail.com</p>
+        <p>https://github.com/NinaLek</p>
+    </div>
+</footer>
     <script src="./reloj.js"></script>
 
 </body>
