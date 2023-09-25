@@ -13,17 +13,20 @@ body{
     font-family: 'Noto Sans','Noto Sans Vithkuqi', sans-serif;
     color: rgb(29, 10, 10);
     height: 100vh;
+    overflow: hidden;
     
 }
 
 header{
     background-color: rgb(189, 255, 127);
     text-align: center; 
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
     width: 100%;
-    font-family: 'Titan One', cursive;
-    font-size: large;
+    font-family: 'Noto Sans','Noto Sans Vithkuqi', sans-serif;
+    font-size: 1vw;
     letter-spacing: 0.3em;
-    height: 5vh;
+    
     
 }
 
@@ -94,5 +97,9 @@ footer{
    header,footer{
     content-visibility: hidden;
    }
-   
 } 
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    header,footer{
+     content-visibility: hidden;
+    }
+}
