@@ -94,7 +94,7 @@ footer{
 /*960*/
 
 @media only screen and (min-device-height : 320px) and (max-device-height : 480px) {
-   header,footer{
+   header,footer .info-footer{
     content-visibility: hidden;
    }
 } 
