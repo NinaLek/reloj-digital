@@ -76,14 +76,7 @@ footer{
 }
 
 @media (max-width: 995px){
-    .contenedor{
-        justify-content: center;
-       
-    }
-    main{
-        background-color: rgba(3, 54, 6, 0.37);
-    }
-    .de{
+  .de{
         content-visibility: hidden;
     }
     .slash{
@@ -96,7 +89,10 @@ footer{
 }
 /* 540 */
 /*960*/
-/* 
-@media (max-width: 750px) {
+
+@media (max-height: 540px) {
+   header,footer{
+    content-visibility: hidden;
+   }
    
-} */
+} 
