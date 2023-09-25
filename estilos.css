@@ -90,7 +90,7 @@ footer{
 /* 540 */
 /*960*/
 
-@media (max-height: 540px) {
+@media (max-height: 1085px) {
    header,footer{
     content-visibility: hidden;
    }
