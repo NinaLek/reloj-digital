@@ -60,7 +60,7 @@ footer{
     background-repeat: no-repeat;
     background-size: contain;
    
-    font-family:;
+    
 }
 .reloj{
     display: flex;
@@ -114,6 +114,9 @@ a:hover{
     }
     .frase{
         font-size: 1em;
+    }
+    body{
+        overflow: scroll;
     }
    
 }
