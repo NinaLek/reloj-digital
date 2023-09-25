@@ -76,10 +76,13 @@ footer{
     border-radius: 15px;
     
 }
-
+.fecha{
+    word-spacing: 0.6em; 
+}
 .fecha p{
     display: inline-block;
-    font-size: 3em;    
+    font-size: 3em;
+       
 }
 .slash{
     content-visibility: hidden;
@@ -122,12 +125,12 @@ a:hover{
 }
 
 @media (max-width: 995px){
-  .de{
+  /* .de{
         content-visibility: hidden;
     }
     .slash{
         content-visibility: visible;
-    }
+    } */
     .frase{
         width: 50%;
         text-align: center;

@@ -21,8 +21,10 @@
 
         pHora = document.getElementById('horas'),
         pMinutos = document.getElementById('minutos'),
-        pSegundos = document.getElementById('segundos');
-        
+        pSegundos = document.getElementById('segundos'),
+        pde =document.getElementById('de'),
+        pde2 = document.getElementById('de2'),
+        sep = ['de','/'];
 
         //ahora hay que mandarselos al index
         //array para el día de la semana
@@ -33,7 +35,12 @@
             //array para el mes
             var meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
             pMes.textContent = meses[mes];
+            // var sep = ['de','/'];
+            pde.textContent = sep[0];
+            pde2.textContent = sep[0];
         }else{
+            pde.textContent = sep[1];
+            pde2.textContent = sep[1];
             if(mes<10){
                 mes="0"+(mes+1);
                 pMes.textContent = mes;
