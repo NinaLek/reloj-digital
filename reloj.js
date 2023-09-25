@@ -22,7 +22,7 @@
         pHora = document.getElementById('horas'),
         pMinutos = document.getElementById('minutos'),
         pSegundos = document.getElementById('segundos'),
-        pde =document.getElementById('de'),
+        pde =document.getElementById('de'), /* no supe como agarrar los 2 de juntos, traté con una clase pero no me funcionaba- acepto sugerencias */
         pde2 = document.getElementById('de2'),
         sep = ['de','/'];
 
