@@ -3,86 +3,60 @@
     padding:0;
     box-sizing: border-box;
 }
-
 body{
-    word-spacing: 0.4em;
-    background: url(./fondo.jpg);
+    /* word-spacing: 0.4em; */
+    /* background: url(./fondo.jpg); */
+    display: flex;
+    flex-direction: column;
     background-size:cover ;
     background-repeat: no-repeat;
     font-family: 'Noto Sans','Noto Sans Vithkuqi', sans-serif;
-   color: white;
+    color: rgb(29, 10, 10);
+    height: 100vh;
     
 }
-/* tratamos de hacerle grid */
-.padre-grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 75% 1fr;
-    grid-template-areas: "header header" "main main" "footer footer";
-}
+
 header{
-    grid-area: header;
-    background-color: aquamarine;
-    
-    padding: 2vh;
-    text-align: center;
-    
-    margin: 0;
-}
-
-main{
-    grid-area: main;
-    /* background-color: brown; */
-    margin: 0;
-    
-}
-
-footer{
-    grid-area: footer;
-    background-color: aquamarine;
-    height: fit-content;
-    padding: 2vh;
-    position: absolute;
-    bottom: 0;
+    background-color: rgb(189, 255, 127);
+    text-align: center; 
     width: 100%;
+    font-family: 'Titan One', cursive;
+    font-size: large;
+    letter-spacing: 0.3em;
+    height: 5vh;
+    
 }
-.imagen-graciosa, .contenedor{
-    display: inline-block;
-    width: 50%;
-    align-items: center;
-    height: 100%;
-}
+
 .main{
     display: flex;
-    flex-direction: row;
-    height: 75vh;
 }
-.imagen-graciosa{
-    display: flex;
+.logo {
+    padding-top: 1.5em;
+    justify-content: center;
 }
-.img-chiste{
-    width: 45%;
-    height: 50%;
-    justify-content: right;
-    align-self: flex-end;
-}
-.contenedor{
-    display: flex;
-    flex-direction: column;
-    padding:2em;
-    
-    color: white;
-    /* background-color: blueviolet; */
-    justify-content: flex-start;
+footer{
+    height: 15vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(189, 255, 127);
+    width: 100%;
 }
 
-.fecha, .hora, .frase{
-    /* background-color: aqua; */
+.contenedor{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    color: rgb(48, 15, 15);
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(91, 173, 184);
 }
+
 .fecha p{
     display: inline-block;
-    font-size: 2em;
-    
+    font-size: 2em;    
 }
 .slash{
     content-visibility: hidden;
@@ -122,25 +96,7 @@ footer{
 }
 /* 540 */
 /*960*/
-
+/* 
 @media (max-width: 750px) {
-    .imagen-graciosa{
-       content-visibility: hidden;
-    }
-    .contenedor, .main{
-        align-self: center;
-        width: 100%;
-        
-    }
-    .padre-grid{
-        grid-template-columns: auto;
-        grid-template-rows: auto 75% auto;
-        grid-template-areas: "header" "main""footer";
-    }
-    .contenedor{
-        grid-area: contenedor;
-    }
-    footer{
-        text-align: center;
-    }
-}
+   
+} */
