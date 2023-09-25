@@ -90,7 +90,7 @@ footer{
 /* 540 */
 /*960*/
 
-@media (max-height: 540px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
    header,footer{
     content-visibility: hidden;
    }
