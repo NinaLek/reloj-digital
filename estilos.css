@@ -131,4 +131,8 @@ a:hover{
     header,footer .info-footer{
      content-visibility: hidden;
     }
+    .fecha{
+        word-spacing: 0.2em;
+        font-size: 2em;
+       }
 }
