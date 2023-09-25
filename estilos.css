@@ -11,19 +11,20 @@ body{
     background-size:cover ;
     background-repeat: no-repeat;
     font-family: 'Noto Sans','Noto Sans Vithkuqi', sans-serif;
+    font-weight: bold;
     color: rgb(29, 10, 10);
     height: 100vh;
     overflow: hidden;
-    
+    background-color:#bdff7f;  
 }
 
 header{
-    background-color: rgb(189, 255, 127);
+    /* background-color: rgb(189, 255, 127); */
     text-align: center; 
     padding-top: 0.5vh;
     padding-bottom: 0.5vh;
     width: 100%;
-    font-family: 'Noto Sans','Noto Sans Vithkuqi', sans-serif;
+    
     font-size: 1vw;
     letter-spacing: 0.3em;
     
@@ -42,24 +43,43 @@ footer{
     display:flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(189, 255, 127);
+    /* background-color: #bdff7f; */
     width: 100%;
 }
 
 .contenedor{
     width: 100%;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     height: 80vh;
     color: rgb(48, 15, 15);
     align-items: center;
     justify-content: center;
-    background-color: rgb(91, 173, 184);
+  
+    background-image: url(./download-removebg-preview.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+   
+    font-family:;
+}
+.reloj{
+    display: flex;
+    background-color: #212b1986;
+    color:white;
+
+    /* background-color: rgba(240, 248, 255, 0.562);
+    color: black; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    border-radius: 15px;
+    
 }
 
 .fecha p{
     display: inline-block;
-    font-size: 2em;    
+    font-size: 3em;    
 }
 .slash{
     content-visibility: hidden;
@@ -67,7 +87,16 @@ footer{
 
 .hora p{
     display: inline-block;
-    font-size: 4em;
+    font-size: 5em;
+}
+.frase{
+    font-size: 2em;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: coral;
 }
 
 /* -----------responsive------------------*/
@@ -76,6 +105,17 @@ footer{
     .dia, .minutos~p{
         content-visibility: hidden;
     }
+    .reloj{
+        background-color: #212b1986;
+        color: White;
+    }
+    .contenedor{
+        background-size: cover;
+    }
+    .frase{
+        font-size: 1em;
+    }
+   
 }
 
 @media (max-width: 995px){
