@@ -41,13 +41,17 @@
         }else{
             pde.textContent = sep[1];
             pde2.textContent = sep[1];
-            if(mes<10){
+            if(mes<9){
                 mes="0"+(mes+1);
                 pMes.textContent = mes;
             }
             
         }
-        pNumero.textContent = numero;
+        if (numero < 10){
+            numero = "0" + numero;
+            pNumero.textContent = numero;
+        }
+        
         pAnio.textContent = anio;
         
         //el formato tiene que ser xx:xx:xx
