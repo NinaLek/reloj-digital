@@ -41,10 +41,10 @@
         }else{
             pde.textContent = sep[1];
             pde2.textContent = sep[1];
-            if(mes<10){
+            if(mes<9){
                 mes="0"+(mes+1);
             }
-            pMes.textContent = mes;
+            pMes.textContent = mes+1;
             
         }
         if (numero < 10){
