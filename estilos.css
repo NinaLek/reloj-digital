@@ -16,7 +16,21 @@ body{
     overflow: hidden;
     background-color:#bdff7f;  
 }
-
+.modo-oscuro{
+    background-color:black;
+    color: rgb(250, 215, 244);
+}
+#modo{
+    display:none;
+}
+#moon{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 3em;
+    color: grey;
+    cursor: pointer;
+}
 header{
     text-align: center; 
     padding-top: 0.5vh;

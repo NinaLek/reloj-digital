@@ -75,6 +75,21 @@
     //actualizar el reloj automáticamente
     var intervalo = setInterval(actualizarHora, 1000);
 
+}());
 
+//Modo Oscuro
+let cambio = document.getElementById('modo');
+let logo = document.getElementById('moon');
+let fondo = document.getElementById('contenedor');
+cambio.addEventListener('change',(e)=>{
+    let check = e.target.checked;
+    document.body.classList.toggle('modo-oscuro');
+    if(check){
+        logo.innerHTML = '<i class="fa-solid fa-sun">';
+        fondo.style.backgroundImage = 'url(./fondo-oscuro.png)';
+    }else{
+        logo.innerHTML = '<i class="fa-solid fa-moon">';
+        fondo.style.backgroundImage = 'url(./fondo-programando-javascript.jpg)';
+    }
     
-}())
+});
